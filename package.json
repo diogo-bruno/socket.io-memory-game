@@ -1,0 +1,13 @@
+{
+  "name": "memory-game-socket",
+  "version": "0.0.1",
+  "description": "Game Mamory, use socket.io and express.",
+  "dependencies": {
+    "express": "^4.17.1",
+    "open": "^7.3.0",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

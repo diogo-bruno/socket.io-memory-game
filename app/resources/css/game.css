@@ -1,0 +1,231 @@
+body {
+  font-family: Consolas;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 660px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+img {
+  margin: 10px 0 0 10px;
+}
+
+#score {
+  float: right;
+  clear: both;
+  font-size: 15px;
+}
+
+#_score {
+  float: right;
+  clear: both;
+  font-size: 15px;
+  color: red;
+}
+
+.button_game {
+  border: 1px solid #dcdcdc;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 0 0 #ffffff inset;
+  color: #777777;
+  display: inline-block;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+
+.button_game:active {
+  position: relative;
+  top: 1px;
+}
+
+.noGame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+  background: transparent;
+  top: 0;
+  left: 0;
+}
+
+#game {
+  margin-top: 50px;
+  background: #eee;
+  width: 660px;
+  height: 540px;
+}
+
+.aguardeJogada {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  opacity: 0.5;
+  top: 60px;
+  left: 0;
+  z-index: 10;
+}
+
+.bg {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: url('../imgs/aguardeSuaVez.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9999;
+}
+
+.aguardeNovoJogador {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  opacity: 0.5;
+  top: 60px;
+  left: 0;
+  z-index: 10;
+}
+
+.bg_novoJogador {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: url('../imgs/aguarde.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9999;
+}
+
+#label_info_jogador {
+  float: left;
+  margin-top: 18px;
+  margin-left: 30px;
+  font-family: Consolas;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#jogadores {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  color: darkgray;
+  text-decoration: underline;
+  font-size: x-large;
+  font-style: italic;
+}
+
+.myButton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+  background-color: #ffffff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff', GradientType=0);
+  background-color: #f6f6f6;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton:disabled {
+  opacity: 0.3;
+}
+
+.myButton {
+  float: left;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: x-small;
+}
+
+.btn {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 17px;
+  background-color: #eee;
+}
+
+.scores {
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#control {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #edede9;
+  border-bottom: 2px solid #ccc;
+}
+
+.text_aguardandoNovoJogador {
+  text-align: center;
+  position: absolute;
+  z-index: 99999;
+  top: 45%;
+  /* margin-top: 10px; */
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
